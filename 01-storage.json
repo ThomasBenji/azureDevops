@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2023-01-01",
+            "name":"thomasdemo1",
+            "location": "North Europe",
+            "sku": {
+                "name": "Standard_GRS"
+            },
+            "kind": "StorageV2"
+        }
+    ],
+    "outputs": {},
+    "functions":[]
+}
