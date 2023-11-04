@@ -5,12 +5,19 @@
     "variables": {},
     "resources": [
         {
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2023-01-01",
+            "location": "East US",
+            "name": "SIT2",
+            "properties": {}
+        },
+        {
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2023-01-01",
-            "name":"thomasdemo1",
-            "location": "North Europe",
+            "name":"sit2storage",
+            "location": "East US",
             "sku": {
-                "name": "Standard_GRS"
+                "name": "Standard_LRS"
             },
             "kind": "StorageV2"
         }
